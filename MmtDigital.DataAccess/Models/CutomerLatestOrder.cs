@@ -27,8 +27,8 @@ namespace MmtDigital.DataAccess.Models
                     OrderDate = this.Order.OrderDate.Value.ToString("dd-MMM-yyyy"),
                     DeliveryAddress = $"{this.Customer.HouseNumber}, {this.Customer.Street}, {this.Customer.Town}, {this.Customer.Postcode}",
                     OrderItems = Order.OrderItems.Select(oi => new OrderItemDto
-                    { 
-                        Product = Order.ContainsGift.Value?"Gift":oi.Product.ProductName,
+                    {
+                        Product = Order.ContainsGift.Value ? "Gift" : oi.Product.ProductName,
                         Quantity = oi.Quantity.Value,
                         PriceEach = oi.Price.Value
                     }),
