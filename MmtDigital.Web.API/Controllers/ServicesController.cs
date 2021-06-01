@@ -21,7 +21,6 @@ namespace MmtDigital.WebAPI.Controllers
 
         // GET: /api/services/customer/latestOrder
         [HttpGet("customer/latestOrder")]
-        //[ProducesResponseType(typeof(latestOrder), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(CutomerLatestOrder), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
